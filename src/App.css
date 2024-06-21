@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: rgb(224, 230, 173);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.score {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.choice {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.choice-player1, .choice-player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player2-hand, .player1-hand {
+  width: 150px;
+}
+
+.player1-hand {
+  transform: rotateY(180deg);
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(168, 226, 51), rgb(60, 173, 210));
+  font-size: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.result {
+  padding: 20px;
+  text-align: center;
+}
+
+.result h1 {
+  margin: 10px 0;
+}
